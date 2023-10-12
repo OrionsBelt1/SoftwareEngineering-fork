@@ -29,7 +29,8 @@ int main()
     do {
         cout << "Please enter a level (between 0 and 100)" << endl;
         cin >> level;
-    } while (level < 0);
+    } while ((level > high) || (level < low));
+
 
     if (level <= low)                       // check the level
     {
@@ -46,4 +47,9 @@ int main()
         cout << "Tank is full" << endl;
     }
 
+    if (level == 0)
+    {
+        cout << "Tank is empty" << endl;
+    }
+    
 }
