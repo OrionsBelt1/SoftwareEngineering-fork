@@ -3,6 +3,7 @@ using namespace std;
 
 int main()
 {
+    int sum = 0;
     //Create and initialise an array
     int nums[] = { 0, 11, 22, 33, 44, 55, 66, 77, 88, 99, 111 };
 
@@ -22,6 +23,15 @@ int main()
         int next = nums[n];                                             //Read by de-referencing
         cout << "Element " << n << " of nums = " << next << endl;       //Write to terminal
     }
+
+    for (unsigned int n = 0; n < N; n++) {
+        int next = nums[n];
+       int newnumber += next;
+    }
+    print 
+        //Read by de-referencing
+        //Write to terminal
+
 
     //Modify each element of the array
     for (unsigned int n = 0; n < N; n++) {
