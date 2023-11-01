@@ -3,7 +3,6 @@ using namespace std;
 
 int main()
 {
-    int sum = 0;
     //Create and initialise an array
     int nums[] = { 0, 11, 22, 33, 44, 55, 66, 77, 88, 99, 111 };
 
@@ -24,15 +23,6 @@ int main()
         cout << "Element " << n << " of nums = " << next << endl;       //Write to terminal
     }
 
-    for (unsigned int n = 0; n < N; n++) {
-        int next = nums[n];
-       int newnumber += next;
-    }
-    print 
-        //Read by de-referencing
-        //Write to terminal
-
-
     //Modify each element of the array
     for (unsigned int n = 0; n < N; n++) {
         int newValue = nums[n] + 1;             //Read (by de-referencing) and add one    
@@ -52,8 +42,22 @@ int main()
     // TASK 1 - calculate and display the SUM of all elements in the array nums *
     // **************************************************************************
 
+
+
+
+    // **************************************************************************
+    // TASK 1 - calculate and display the SUM of all elements in the array nums *
+    // **************************************************************************
+
     //Write task 1 solution here
-    int64_t sum = 0L;   //Result needs to be bigger than int to avoid overflow
+    int64_t sum = 0;
+    for (unsigned int n = 0; n < N; n++) {
+        sum += nums[n];
+    }
+    cout << "Sum = " << sum << endl;
+
+    cout << sizeof(int64_t) << "**" << endl;
+    //Result needs to be bigger than int to avoid overflow
 
 
     // ***********************************************************************************************************************
@@ -61,6 +65,8 @@ int main()
     // ***********************************************************************************************************************
 
     //Write task 2 solution here
+    float mean = (float)sum / (float)N;
+    printf("Mean = %.1f\n", mean);
 
 }
 
